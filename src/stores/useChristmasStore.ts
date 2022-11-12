@@ -4,13 +4,21 @@ export const useChristmas = defineStore('Christmas', {
     state: () => ({
         christmas: {
             title: "Liste de Noël 2022",
-            subtitle: "Ma liste de souhaits pour ce Noël. Chaque article non acheté rendra triste un chaton. Pensez-y avant d'être radin. Vous pouvez filtrer mes souhaits par prix ou par préférénce. Plus il y a de coeurs, plus j'aime !",
+            subtitle: "Ma liste de souhaits pour ce Noël. Vous pouvez filtrer mes souhaits par prix ou par préférénce. Plus il y a de coeurs, plus j'aime !",
             image: {
                 name: 'christmas.png',
                 alt: ''
             },
             preferenceImage: 'heart.png',
             list: [
+                /*{
+                    title: "",
+                    description: "",
+                    price: 0,
+                    preference: 1,
+                    link: '',
+                    image: ''
+                },*/
                 {
                     title: "Monopoly Animal Crossing",
                     description: "Pour redécouvrir ce jeu mythique dans l'univers d'Animal Crossing.",
@@ -35,6 +43,54 @@ export const useChristmas = defineStore('Christmas', {
                     link: 'https://livre.fnac.com/a9872460/Simplissime-Le-livre-de-desserts-les-faciles-du-monde-Simplissime-desserts-Jean-Francois-Mallet',
                     image: 'https://cdn.cultura.com/cdn-cgi/image/width=1280/media/pim/TITELIVE/84_9782011356437_1_75.jpg'
                 },
+                {
+                    title: "Lightfall tome 1",
+                    description: "Un roman graphique qui me fait de l'oeil depuis longtemps.",
+                    price: 19,
+                    preference: 3,
+                    link: 'https://www.cultura.com/p-lightfall-la-derniere-flamme-9782075152594.html',
+                    image: 'https://cdn.cultura.com/cdn-cgi/image/width=1280/media/pim/TITELIVE/23_9782075152594_1_75.jpg'
+                },
+                {
+                    title: "Everdell",
+                    description: "Un jeu facile d'accès dans un univers enchanteur, pouvant se jouer à 2 ou même seul.",
+                    price: 53,
+                    preference: 2,
+                    link: 'https://www.philibertnet.com/fr/starling-games/84458-everdell-610585962435.html',
+                    image: 'https://cdn2.philibertnet.com/538270-large_default/everdell.jpg'
+                },
+                {
+                    title: "DeLorean Playmobil",
+                    description: "",
+                    price: 43,
+                    preference: 1,
+                    link: 'https://www.king-jouet.com/jeu-jouet/Jeux-imitation-mondes-imaginaires/playmobil/ref-808464-70317-playmobil-retour-vers-le-futur-delorean.htm',
+                    image: 'https://www.king-jouet.com/fstrz/r/s/c/images.king-jouet.com/6/gu808464_6.jpg.avif?frz-v=394'
+                },
+                {
+                    title: "Mug Ratus",
+                    description: "",
+                    price: 15,
+                    preference: 3,
+                    link: 'https://boutiqueultia.com/products/tasse-rat',
+                    image: 'https://cdn.shopify.com/s/files/1/0587/0872/1796/products/TasseRat.jpg?v=1665145975&width=1946'
+                },
+                {
+                    title: "T-shirt Ratus",
+                    description: "Noir coupe homme taille S",
+                    price: 25,
+                    preference: 2,
+                    link: 'https://boutiqueultia.com/products/tshirt?variant=40862704271492',
+                    image: 'https://cdn.shopify.com/s/files/1/0587/0872/1796/products/TShirtRat.jpg?v=1665409378&width=1946'
+                },
+                {
+                    title: "T-shirt Popcorn sugar",
+                    description: "",
+                    price: 25,
+                    preference: 1,
+                    link: 'https://boutiquepopcorn.fr/collections/tous-les-produits/products/tee-shirt-popcorn-sugar',
+                    image: 'https://cdn.shopify.com/s/files/1/0328/2708/0840/products/ImpressionSugar_720x.jpg?v=1665491703'
+                }
             ],
             filters: {
                 allItems: true,

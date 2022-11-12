@@ -31,8 +31,6 @@ const christmas = useChristmas().christmas
 
 <style scoped lang="sass">
 .card
-  max-width: 300px
-  width: 100%
   border: 6px solid #ed9fcf
   border-radius: 10px
   background-color: #000

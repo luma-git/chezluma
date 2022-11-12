@@ -3,17 +3,7 @@ import { onMounted, ref } from 'vue'
 import { useChristmas } from '@/stores/useChristmasStore'
 import LayoutTitle from '@/components/layout/LayoutTitle.vue'
 import LayoutCardChristmas from '@/components/layout/LayoutCardChristmas.vue'
-
-interface Item {
-  title: string,
-  description: string,
-  price: number,
-  preference: number,
-  link: string,
-  image: string
-}
-
-type Items = Item[]
+import type { Items } from '@/types/christmas'
 
 const store = useChristmas()
 const christmas = store.christmas
@@ -77,6 +67,8 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
       </button>
     </div>
 
+    <p class="items-counter">{{ items.length }} souhait{{ items.length > 0 ? 's' : '' }}</p>
+
     <div class="cards">
       <LayoutCardChristmas
           v-for="(item, index) in items"
@@ -95,8 +87,10 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
 <style scoped lang="sass">
 .cards
   margin-top: 5px
-  display: flex
-  gap: 5px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  column-gap: 5px
+  row-gap: 5px
 
 .filter-btn
   background-color: #ed9fcf
@@ -105,6 +99,7 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
   font-size: 1.1em
   display: flex
   gap: 2px
+  cursor: pointer
 
   img
     width: 18px
@@ -117,4 +112,8 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
 
 .active
   background-color: #ed34a6
+
+.items-counter
+  text-align: center
+  font-size: 1.2em
 </style>
