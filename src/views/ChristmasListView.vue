@@ -67,7 +67,7 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
       </button>
     </div>
 
-    <p class="items-counter">{{ items.length }} souhait{{ items.length > 0 ? 's' : '' }}</p>
+    <p class="items-counter">{{ items.length }} souhait{{ items.length > 1 ? 's' : '' }}</p>
 
     <div class="cards">
       <LayoutCardChristmas
@@ -108,7 +108,7 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
   display: flex
   gap: 3px
   justify-content: space-between
-  margin-top: 5px
+  margin-top: 10px
 
 .active
   background-color: #ed34a6

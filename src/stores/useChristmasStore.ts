@@ -60,14 +60,6 @@ export const useChristmas = defineStore('Christmas', {
                     image: 'https://cdn2.philibertnet.com/538270-large_default/everdell.jpg'
                 },
                 {
-                    title: "DeLorean Playmobil",
-                    description: "",
-                    price: 43,
-                    preference: 1,
-                    link: 'https://www.king-jouet.com/jeu-jouet/Jeux-imitation-mondes-imaginaires/playmobil/ref-808464-70317-playmobil-retour-vers-le-futur-delorean.htm',
-                    image: 'https://www.king-jouet.com/fstrz/r/s/c/images.king-jouet.com/6/gu808464_6.jpg.avif?frz-v=394'
-                },
-                {
                     title: "Mug Ratus",
                     description: "",
                     price: 15,
@@ -90,6 +82,14 @@ export const useChristmas = defineStore('Christmas', {
                     preference: 1,
                     link: 'https://boutiquepopcorn.fr/collections/tous-les-produits/products/tee-shirt-popcorn-sugar',
                     image: 'https://cdn.shopify.com/s/files/1/0328/2708/0840/products/ImpressionSugar_720x.jpg?v=1665491703'
+                },
+                {
+                    title: "Intégrale Kaamelott en DVD",
+                    description: "",
+                    price: 89,
+                    preference: 4,
+                    link: 'https://www.fnac.com/a12584723/Kaamelott-Les-Six-Livres-L-integrale-de-la-serie-Coffret-DVD-Alexandre-Astier-DVD-Zone-2',
+                    image: 'https://static.fnac-static.com/multimedia/Images/FR/NR/e1/6b/9c/10251233/1540-1/tsp20180823170206/Kaamelott-Les-Six-Livres-L-integrale-de-la-serie-Coffret-DVD.jpg'
                 }
             ],
             filters: {

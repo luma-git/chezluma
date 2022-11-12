@@ -13,7 +13,7 @@ const props = defineProps({
       <img :src="`./src/assets/images/${props.imageName}`" :alt="props.imageAlt" />
     </div>
     <div class="title">
-      <h1>{{ props.title }}</h1>
+      <h2>{{ props.title }}</h2>
       <p v-if="props.subtitle">{{ props.subtitle }}</p>
     </div>
   </div>

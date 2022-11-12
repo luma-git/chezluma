@@ -2,8 +2,11 @@ import { defineStore } from 'pinia'
 
 export const useContent = defineStore('Content', {
     state: () => ({
+        app: {
+            title: 'Chez Luma'
+        },
         home: {
-            title: "Chez Luma",
+            title: "Bienvenue chez Luma !",
             subtitle: "Bonjour, je suis une petite fille faite de pixels. J'ai été possédée par l'esprit de ma créatrice, Luma. Elle m'a chargée de vous souhaiter la bienvenue sur ce site. Si ça vous intéresse, il a été créé avec VueJS.",
             image: {
                 name: 'paula.png',

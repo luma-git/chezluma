@@ -8,20 +8,18 @@ const cards = home.cards
 </script>
 
 <template>
-  <main>
-    <LayoutTitle :title="home.title" :subtitle="home.subtitle" :image-name="home.image.name" :image-alt="home.image.alt"  />
-    <div class="cards">
-      <LayoutCard
-        v-for="(card, index) in cards"
-        :key="index"
-        :title="card.title"
-        :description="card.description"
-        :image-name="card.image.name"
-        :image-alt="card.image.alt"
-        :link="card.link"
-      />
-    </div>
-  </main>
+  <LayoutTitle :title="home.title" :subtitle="home.subtitle" :image-name="home.image.name" :image-alt="home.image.alt"  />
+  <div class="cards">
+    <LayoutCard
+      v-for="(card, index) in cards"
+      :key="index"
+      :title="card.title"
+      :description="card.description"
+      :image-name="card.image.name"
+      :image-alt="card.image.alt"
+      :link="card.link"
+    />
+  </div>
 </template>
 
 <style scoped lang="sass">
