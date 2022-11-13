@@ -4,17 +4,14 @@ import { RouterLink } from 'vue-router'
 const props = defineProps({
   title: String,
   description: String,
-  imageName: String,
-  imageAlt: String,
+  emoji: String,
   link: String
 })
 </script>
 
 <template>
   <section class="card">
-    <div class="image-container">
-      <img :src="`./images/${props.imageName}`" :alt="props.imageAlt">
-    </div>
+    <span>{{ props. emoji }}</span>
     <div class="card-content">
       <h2>{{ props.title }}</h2>
       <p>{{ props.description }}</p>
@@ -26,27 +23,17 @@ const props = defineProps({
 <style scoped lang="sass">
 .card
   display: flex
-  align-items: center
-  gap: 20px
+  background-color: #0e1b26
+  max-width: 400px
+  width: 100%
+  border-radius: 10px
+  padding: 10px
+  gap: 10px
+
+  span
+    font-size: 2em
 
 .card-content
-  width: 50%
-  border: 6px solid #ed9fcf
-  border-radius: 10px
-  background-color: #000
-  color: #fff
-  padding: 10px 20px
-
-img
-  height: 50px
-
-a
-  font-size: 1.2em
-
-a:before
-  content: ">"
-  padding-right: 5px
-
-.image-container
-  width: 40px
+  display: flex
+  flex-direction: column
 </style>

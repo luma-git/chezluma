@@ -1,21 +1,17 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import { useContent } from '@/stores/useContentStore'
-
-const content = useContent()
 </script>
 
 <template>
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/"><img src="../public/images/dog.png" alt="Retour à l'accueil" /><span>Home</span></RouterLink>
+        <RouterLink to="/">Home</RouterLink>
         <!--<RouterLink to="/about">A propos</RouterLink>-->
       </nav>
     </div>
   </header>
   <main>
-    <h1>{{ content.app.title }}</h1>
     <RouterView />
   </main>
 </template>
@@ -32,9 +28,6 @@ nav a
   display: flex
   gap: 5px
   align-items: center
-
-  img
-    height: 27px
 
 h1
   text-align: center
