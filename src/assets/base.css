@@ -9,12 +9,13 @@
 
 body {
   min-height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: 'VT323', monospace;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../../public/images/background.jpg");
+  background-color: #02101c;
+  color: #8293a1;
 }

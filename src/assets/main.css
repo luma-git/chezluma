@@ -1,9 +1,9 @@
 @import './base.css';
 
 #app {
-  max-width: 920px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
   font-weight: normal;
 }
 
@@ -11,8 +11,4 @@ a {
   text-decoration: none;
   transition: 0.4s;
   color: inherit;
-}
-
-h2 {
-  line-height: 1.1;
 }

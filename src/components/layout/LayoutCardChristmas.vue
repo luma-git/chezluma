@@ -20,10 +20,7 @@ const christmas = useChristmas().christmas
     <p>{{ props.description }}</p>
     <p class="price">Prix : {{ props.price }} €</p>
     <div class="preference">
-      <p>Préférence :</p>
-      <div>
-        <img v-for="(n, index) in props.preference" :src="`./images/${christmas.preferenceImage}`" alt="" :key="index" />
-      </div>
+      <p>Préférence : <span v-for="(n, index) in props.preference" :key="index">🧡</span></p>
     </div>
     <a :href="props.link" target="_blank">Voir le souhait</a>
   </section>
@@ -31,39 +28,15 @@ const christmas = useChristmas().christmas
 
 <style scoped lang="sass">
 .card
-  border: 6px solid #ed9fcf
   border-radius: 10px
-  background-color: #000
-  color: #fff
-  padding: 10px 20px
-
-  .price, .preference
-    font-size: 1.1em
-
-  .preference img
-    width: 18px
-
-  .preference
-    display: flex
-    gap: 5px
-
-  .preference p + div
-    display: flex
-    align-items: center
-    gap: 2px
+  background-color: #0e1b26
+  max-width: 370px
+  width: 100%
+  padding: 10px
 
 .image-container
-  border: #fff 2px solid
-  border-radius: 5px
   margin-bottom: 5px
-  height: 180px
+  height: 250px
   background-size: cover
   background-position: center
-
-a
-  font-size: 1.2em
-
-a:before
-  content: ">"
-  padding-right: 5px
 </style>

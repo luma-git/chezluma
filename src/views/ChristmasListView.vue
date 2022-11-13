@@ -57,13 +57,13 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
 
 <template>
   <main>
-    <LayoutTitle :title="christmas.title" :subtitle="christmas.subtitle" :image-name="christmas.image.name" :image-alt="christmas.image.alt"  />
+    <LayoutTitle :title="christmas.title" :subtitle="christmas.subtitle" :emoji="christmas.emoji"  />
 
     <div class="filter">
       <button @click="reloadItems" :class="allItems ? 'filter-btn active' : 'filter-btn'">Tout les souhaits</button>
       <button v-for="(filter, index) in christmas.filters.onPrice" :key="index" @click="filterOnPrice(filter)" :class="filter.isActive ? 'filter-btn active' : 'filter-btn'">Moins de {{ filter.filter }} €</button>
       <button v-for="(filter, index) in christmas.filters.onPreference" :key="index" @click="filterOnPreference(filter)" :class="filter.isActive ? 'filter-btn active' : 'filter-btn'">
-          <img v-for="(n, index) in filter.filter" :src="`./images/${christmas.preferenceImage}`" alt="" :key="index" />
+        <span v-for="(n, index) in filter.filter" :key="index">🧡</span>
       </button>
     </div>
 
@@ -86,34 +86,29 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
 
 <style scoped lang="sass">
 .cards
-  margin-top: 5px
-  display: grid
-  grid-template-columns: repeat(3, 1fr)
-  column-gap: 5px
-  row-gap: 5px
+  margin: auto
+  display: flex
+  flex-wrap: wrap
+  gap: 15px
 
 .filter-btn
-  background-color: #ed9fcf
-  padding: 5px
-  font-family: 'VT323', monospace
-  font-size: 1.1em
-  display: flex
-  gap: 2px
+  background-color: #0e1b26
+  padding: 3px 5px
   cursor: pointer
-
-  img
-    width: 18px
+  font-family: 'Ubuntu', sans-serif
+  border: none
+  border-radius: 5px
+  color: #8293a1
 
 .filter
   display: flex
-  gap: 3px
-  justify-content: space-between
-  margin-top: 10px
+  gap: 10px
+  justify-content: center
 
 .active
-  background-color: #ed34a6
+  background-color: #18045c
 
 .items-counter
   text-align: center
-  font-size: 1.2em
+  padding: 10px
 </style>

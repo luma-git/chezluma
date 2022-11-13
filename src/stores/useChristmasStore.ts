@@ -5,10 +5,7 @@ export const useChristmas = defineStore('Christmas', {
         christmas: {
             title: "Liste de Noël 2022",
             subtitle: "Ma liste de souhaits pour ce Noël. Vous pouvez filtrer mes souhaits par prix ou par préférénce. Plus il y a de coeurs, plus j'aime !",
-            image: {
-                name: 'christmas.png',
-                alt: ''
-            },
+            emoji: '🎄',
             preferenceImage: 'heart.png',
             list: [
                 /*{

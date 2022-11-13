@@ -8,21 +8,19 @@ const cards = home.cards
 </script>
 
 <template>
-  <LayoutTitle :title="home.title" :subtitle="home.subtitle" :image-name="home.image.name" :image-alt="home.image.alt"  />
+  <LayoutTitle :title="home.title" :subtitle="home.subtitle" :emoji="home.emoji" />
   <div class="cards">
     <LayoutCard
       v-for="(card, index) in cards"
       :key="index"
       :title="card.title"
       :description="card.description"
-      :image-name="card.image.name"
-      :image-alt="card.image.alt"
+      :emoji="card.emoji"
       :link="card.link"
     />
   </div>
 </template>
 
 <style scoped lang="sass">
-.cards
-  margin-top: 5px
+
 </style>
