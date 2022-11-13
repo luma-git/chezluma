@@ -22,7 +22,7 @@ const christmas = useChristmas().christmas
     <div class="preference">
       <p>Préférence :</p>
       <div>
-        <img v-for="(n, index) in props.preference" :src="`./src/assets/images/${christmas.preferenceImage}`" alt="" :key="index" />
+        <img v-for="(n, index) in props.preference" :src="`./images/${christmas.preferenceImage}`" alt="" :key="index" />
       </div>
     </div>
     <a :href="props.link" target="_blank">Voir le souhait</a>

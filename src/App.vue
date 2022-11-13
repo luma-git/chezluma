@@ -9,7 +9,7 @@ const content = useContent()
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/"><img src="./assets/images/dog.png" alt="Retour à l'accueil" /><span>Home</span></RouterLink>
+        <RouterLink to="/"><img src="../public/images/dog.png" alt="Retour à l'accueil" /><span>Home</span></RouterLink>
         <!--<RouterLink to="/about">A propos</RouterLink>-->
       </nav>
     </div>
