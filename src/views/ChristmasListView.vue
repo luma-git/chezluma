@@ -102,6 +102,7 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
 
 .filter
   display: flex
+  flex-wrap: wrap
   gap: 10px
   justify-content: center
 
