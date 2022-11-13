@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
   <div class="content">
     <div class="image-container">
-      <img :src="`./src/assets/images/${props.imageName}`" :alt="props.imageAlt" />
+      <img :src="`./images/${props.imageName}`" :alt="props.imageAlt" />
     </div>
     <div class="title">
       <h2>{{ props.title }}</h2>

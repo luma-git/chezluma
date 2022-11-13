@@ -8,13 +8,12 @@ const props = defineProps({
   imageAlt: String,
   link: String
 })
-
 </script>
 
 <template>
   <section class="card">
     <div class="image-container">
-      <img :src="`./src/assets/images/${props.imageName}`" :alt="props.imageAlt">
+      <img :src="`./images/${props.imageName}`" :alt="props.imageAlt">
     </div>
     <div class="card-content">
       <h2>{{ props.title }}</h2>

@@ -63,7 +63,7 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
       <button @click="reloadItems" :class="allItems ? 'filter-btn active' : 'filter-btn'">Tout les souhaits</button>
       <button v-for="(filter, index) in christmas.filters.onPrice" :key="index" @click="filterOnPrice(filter)" :class="filter.isActive ? 'filter-btn active' : 'filter-btn'">Moins de {{ filter.filter }} €</button>
       <button v-for="(filter, index) in christmas.filters.onPreference" :key="index" @click="filterOnPreference(filter)" :class="filter.isActive ? 'filter-btn active' : 'filter-btn'">
-          <img v-for="(n, index) in filter.filter" :src="`./src/assets/images/${christmas.preferenceImage}`" alt="" :key="index" />
+          <img v-for="(n, index) in filter.filter" :src="`./images/${christmas.preferenceImage}`" alt="" :key="index" />
       </button>
     </div>
 
