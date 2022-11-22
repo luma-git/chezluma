@@ -13,7 +13,11 @@ const props = defineProps({
   <section class="card">
     <h2 class="accent">{{ props.title }} <span>{{ props. emoji }}</span></h2>
     <p>{{ props.description }}</p>
-    <button class="accent-btn" @click="router.push(props.link)">Découvrir</button>
+    <router-link :to="`${props.link}`">
+      <button class="accent-btn">
+        Découvrir
+      </button>
+    </router-link>
   </section>
 </template>
 
