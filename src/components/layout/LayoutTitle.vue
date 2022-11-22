@@ -9,7 +9,7 @@ const props = defineProps({
 <template>
   <div class="title">
     <span>{{ props.emoji }}</span>
-    <h1>{{ props.title }}</h1>
+    <h1 class="accent">{{ props.title }}</h1>
     <p v-if="props.subtitle">{{ props.subtitle }}</p>
   </div>
 </template>
@@ -19,7 +19,7 @@ const props = defineProps({
   display: flex
   flex-direction: column
   text-align: center
-  margin-bottom: 30px
+  margin-bottom: 50px
 
   span
     font-size: 4em

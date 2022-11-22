@@ -17,6 +17,14 @@ export const useChristmas = defineStore('Christmas', {
                     image: ''
                 },*/
                 {
+                    title: "Les lettres du Père Noël de Tolkien",
+                    description: "",
+                    price: 29,
+                    preference: 4,
+                    link: 'https://www.cultura.com/p-lettres-du-pere-noel-9782267046809.html',
+                    image: 'https://cdn.cultura.com/cdn-cgi/image/width=1280/media/pim/TITELIVE/15_9782267046809_1_75.jpg'
+                },
+                {
                     title: "Monopoly Animal Crossing",
                     description: "Pour redécouvrir ce jeu mythique dans l'univers d'Animal Crossing.",
                     price: 27,
@@ -63,22 +71,6 @@ export const useChristmas = defineStore('Christmas', {
                     preference: 3,
                     link: 'https://boutiqueultia.com/products/tasse-rat',
                     image: 'https://cdn.shopify.com/s/files/1/0587/0872/1796/products/TasseRat.jpg?v=1665145975&width=1946'
-                },
-                {
-                    title: "T-shirt Ratus",
-                    description: "Noir coupe homme taille S",
-                    price: 25,
-                    preference: 2,
-                    link: 'https://boutiqueultia.com/products/tshirt?variant=40862704271492',
-                    image: 'https://cdn.shopify.com/s/files/1/0587/0872/1796/products/TShirtRat.jpg?v=1665409378&width=1946'
-                },
-                {
-                    title: "T-shirt Popcorn sugar",
-                    description: "",
-                    price: 25,
-                    preference: 1,
-                    link: 'https://boutiquepopcorn.fr/collections/tous-les-produits/products/tee-shirt-popcorn-sugar',
-                    image: 'https://cdn.shopify.com/s/files/1/0328/2708/0840/products/ImpressionSugar_720x.jpg?v=1665491703'
                 },
                 {
                     title: "Intégrale Kaamelott en DVD",

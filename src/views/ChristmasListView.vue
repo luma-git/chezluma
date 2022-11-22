@@ -60,14 +60,14 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
     <LayoutTitle :title="christmas.title" :subtitle="christmas.subtitle" :emoji="christmas.emoji"  />
 
     <div class="filter">
-      <button @click="reloadItems" :class="allItems ? 'filter-btn active' : 'filter-btn'">Tout les souhaits</button>
+      <button @click="reloadItems" :class="allItems ? 'filter-btn active' : 'filter-btn'">Tous les souhaits</button>
       <button v-for="(filter, index) in christmas.filters.onPrice" :key="index" @click="filterOnPrice(filter)" :class="filter.isActive ? 'filter-btn active' : 'filter-btn'">Moins de {{ filter.filter }} €</button>
       <button v-for="(filter, index) in christmas.filters.onPreference" :key="index" @click="filterOnPreference(filter)" :class="filter.isActive ? 'filter-btn active' : 'filter-btn'">
-        <span v-for="(n, index) in filter.filter" :key="index">🧡</span>
+        <span v-for="(n, index) in filter.filter" :key="index">💜</span>
       </button>
     </div>
 
-    <p class="items-counter">{{ items.length }} souhait{{ items.length > 1 ? 's' : '' }}</p>
+    <p class="items-counter accent">{{ items.length }} souhait{{ items.length > 1 ? 's' : '' }}</p>
 
     <div class="cards">
       <LayoutCardChristmas
@@ -89,16 +89,16 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
   margin: auto
   display: flex
   flex-wrap: wrap
-  gap: 15px
+  gap: 25px
 
 .filter-btn
-  background-color: #0e1b26
-  padding: 3px 5px
+  background-color: #000
+  padding: 10px 15px
   cursor: pointer
   font-family: 'Ubuntu', sans-serif
   border: none
-  border-radius: 5px
-  color: #8293a1
+  border-radius: 30px
+  color: #fff
 
 .filter
   display: flex
@@ -107,7 +107,7 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
   justify-content: center
 
 .active
-  background-color: #18045c
+  background-image: linear-gradient(to right top, #260145, #460f57, #652169, #85347b)
 
 .items-counter
   text-align: center

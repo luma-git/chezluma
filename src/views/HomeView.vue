@@ -22,5 +22,7 @@ const cards = home.cards
 </template>
 
 <style scoped lang="sass">
-
+.cards
+  display: flex
+  gap: 20px
 </style>
