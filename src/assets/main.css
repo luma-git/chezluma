@@ -12,3 +12,32 @@ a {
   transition: 0.4s;
   color: inherit;
 }
+
+h1 {
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+h1 + p {
+  font-size: 1.5em;
+}
+
+.accent {
+  color: #d285de;
+}
+
+.accent-btn {
+  background-image: linear-gradient(to right top, #260145, #460f57, #652169, #85347b);
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+.accent-btn:hover {
+  cursor: pointer;
+  background-image: none;
+  background-color: #260145;
+}

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+import router from '@/router'
 
 const props = defineProps({
   title: String,
@@ -11,29 +11,24 @@ const props = defineProps({
 
 <template>
   <section class="card">
-    <span>{{ props. emoji }}</span>
-    <div class="card-content">
-      <h2>{{ props.title }}</h2>
-      <p>{{ props.description }}</p>
-      <RouterLink :to="`/${props.link}`">Découvrir</RouterLink>
-    </div>
+    <h2 class="accent">{{ props.title }} <span>{{ props. emoji }}</span></h2>
+    <p>{{ props.description }}</p>
+    <button class="accent-btn" @click="router.push(props.link)">Découvrir</button>
   </section>
 </template>
 
 <style scoped lang="sass">
 .card
-  display: flex
-  background-color: #0e1b26
-  max-width: 400px
+  background-color: #241f30
+  max-width: 375px
   width: 100%
   border-radius: 10px
-  padding: 10px
-  gap: 10px
+  padding: 20px 27px
 
-  span
-    font-size: 2em
+  h2
+    font-weight: bold
+    font-size: 1.2em
 
-.card-content
-  display: flex
-  flex-direction: column
+  p
+    margin: 5px auto 10px auto
 </style>
