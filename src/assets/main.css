@@ -41,3 +41,22 @@ h1 + p {
   background-image: none;
   background-color: #260145;
 }
+
+.card {
+  background-color: #241f30;
+  width: 370px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card h2 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}

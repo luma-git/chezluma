@@ -10,8 +10,8 @@ const props = defineProps({
 </script>
 
 <template>
-  <a :href="props.link" target="_blank">
-    <section class="card">
+  <section class="card">
+    <a :href="props.link" target="_blank">
       <div class="image-container" :style="`background-image: url('${props.image}')`"></div>
       <h2>{{ props.title }}</h2>
       <p>{{ props.description }}</p>
@@ -19,31 +19,15 @@ const props = defineProps({
       <div class="preference">
         <p>Préférence : <span v-for="(n, index) in props.preference" :key="index">💜</span></p>
       </div>
-    </section>
-  </a>
+    </a>
+  </section>
 </template>
 
 <style scoped lang="sass">
-.card
-  border-radius: 10px
-  width: 370px
-  background-color: #241f30
-  padding: 20px
-  filter: opacity(30%)
-  transition: filter 0.3s
-
-  h2
-    font-weight: bold
-    font-size: 1.2em
-
 .image-container
   margin-bottom: 5px
   height: 250px
   background-size: cover
   background-position: center
-
-
-.card:hover
-
-    filter: opacity(90%)
+  filter: opacity(80%)
 </style>
