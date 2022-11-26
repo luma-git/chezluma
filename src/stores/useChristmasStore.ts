@@ -17,6 +17,14 @@ export const useChristmas = defineStore('Christmas', {
                     image: ''
                 },*/
                 {
+                    title: "Raspberry Pi4",
+                    description: "Un truc génial pour faire joujou sous le sapin. Malheureusement en rupture de stock pour le moment.",
+                    price: 96,
+                    preference: 3,
+                    link: 'https://www.kubii.fr/raspberry-pi-4-modele-b/2689-kit-raspberry-pi4-budget-kubii-3272496298668.html',
+                    image: 'https://www.kubii.fr/9114-large_default/kit-raspberry-pi4-budget-kubii.jpg'
+                },
+                {
                     title: "Les lettres du Père Noël de Tolkien",
                     description: "",
                     price: 29,
