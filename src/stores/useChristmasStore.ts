@@ -17,8 +17,16 @@ export const useChristmas = defineStore('Christmas', {
                     image: ''
                 },*/
                 {
+                    title: "Raspberry Pi4",
+                    description: "Un truc génial pour faire joujou sous le sapin. Malheureusement en rupture de stock pour le moment.",
+                    price: 96,
+                    preference: 3,
+                    link: 'https://www.kubii.fr/raspberry-pi-4-modele-b/2689-kit-raspberry-pi4-budget-kubii-3272496298668.html',
+                    image: 'https://www.kubii.fr/9114-large_default/kit-raspberry-pi4-budget-kubii.jpg'
+                },
+                {
                     title: "Les lettres du Père Noël de Tolkien",
-                    description: "",
+                    description: "Pour rêver de mondes fantastiques grâce à la plume magique de Tolkien.",
                     price: 29,
                     preference: 4,
                     link: 'https://www.cultura.com/p-lettres-du-pere-noel-9782267046809.html',
@@ -66,7 +74,7 @@ export const useChristmas = defineStore('Christmas', {
                 },
                 {
                     title: "Mug Ratus",
-                    description: "",
+                    description: "Trop choupi ce mug merch de la streameuse Ultia.",
                     price: 15,
                     preference: 3,
                     link: 'https://boutiqueultia.com/products/tasse-rat',
@@ -74,7 +82,7 @@ export const useChristmas = defineStore('Christmas', {
                 },
                 {
                     title: "Intégrale Kaamelott en DVD",
-                    description: "",
+                    description: "Merci Zizi, au revoir messieurs dames.",
                     price: 89,
                     preference: 4,
                     link: 'https://www.fnac.com/a12584723/Kaamelott-Les-Six-Livres-L-integrale-de-la-serie-Coffret-DVD-Alexandre-Astier-DVD-Zone-2',
