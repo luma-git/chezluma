@@ -56,41 +56,33 @@ function filterOnPreference(filter: { filter: number, isActive: boolean }) {
 </script>
 
 <template>
-  <main>
-    <LayoutTitle :title="christmas.title" :subtitle="christmas.subtitle" :emoji="christmas.emoji"  />
+  <LayoutTitle :title="christmas.title" :subtitle="christmas.subtitle" :emoji="christmas.emoji"  />
 
-    <div class="filter">
-      <button @click="reloadItems" :class="allItems ? 'filter-btn active' : 'filter-btn'">Tous les souhaits</button>
-      <button v-for="(filter, index) in christmas.filters.onPrice" :key="index" @click="filterOnPrice(filter)" :class="filter.isActive ? 'filter-btn active' : 'filter-btn'">Moins de {{ filter.filter }} €</button>
-      <button v-for="(filter, index) in christmas.filters.onPreference" :key="index" @click="filterOnPreference(filter)" :class="filter.isActive ? 'filter-btn active' : 'filter-btn'">
-        <span v-for="(n, index) in filter.filter" :key="index">💜</span>
-      </button>
-    </div>
+  <div class="filter">
+    <button @click="reloadItems" :class="allItems ? 'filter-btn active' : 'filter-btn'">Tous les souhaits</button>
+    <button v-for="(filter, index) in christmas.filters.onPrice" :key="index" @click="filterOnPrice(filter)" :class="filter.isActive ? 'filter-btn active' : 'filter-btn'">Moins de {{ filter.filter }} €</button>
+    <button v-for="(filter, index) in christmas.filters.onPreference" :key="index" @click="filterOnPreference(filter)" :class="filter.isActive ? 'filter-btn active' : 'filter-btn'">
+      <span v-for="(n, index) in filter.filter" :key="index">💜</span>
+    </button>
+  </div>
 
-    <p class="items-counter accent">{{ items.length }} souhait{{ items.length > 1 ? 's' : '' }}</p>
+  <p class="items-counter accent">{{ items.length }} souhait{{ items.length > 1 ? 's' : '' }}</p>
 
-    <div class="cards">
-      <LayoutCardChristmas
-          v-for="(item, index) in items"
-          :key="index"
-          :title="item.title"
-          :description="item.description"
-          :price="item.price"
-          :preference="item.preference"
-          :link="item.link"
-          :image="item.image"
-      />
-    </div>
-  </main>
+  <div class="cards">
+    <LayoutCardChristmas
+        v-for="(item, index) in items"
+        :key="index"
+        :title="item.title"
+        :description="item.description"
+        :price="item.price"
+        :preference="item.preference"
+        :link="item.link"
+        :image="item.image"
+    />
+  </div>
 </template>
 
 <style scoped lang="sass">
-.cards
-  margin: auto
-  display: flex
-  flex-wrap: wrap
-  gap: 25px
-
 .filter-btn
   background-color: #000
   padding: 10px 15px

@@ -22,17 +22,6 @@ const props = defineProps({
 </template>
 
 <style scoped lang="sass">
-.card
-  background-color: #241f30
-  max-width: 375px
-  width: 100%
-  border-radius: 10px
-  padding: 20px 27px
-
-  h2
-    font-weight: bold
-    font-size: 1.2em
-
-  p
-    margin: 5px auto 10px auto
+p
+  margin: 5px auto 10px auto
 </style>
