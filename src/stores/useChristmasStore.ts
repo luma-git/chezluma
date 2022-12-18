@@ -25,14 +25,6 @@ export const useChristmas = defineStore('Christmas', {
                     image: 'https://www.kubii.fr/9114-large_default/kit-raspberry-pi4-budget-kubii.jpg'
                 },
                 {
-                    title: "Les lettres du Père Noël de Tolkien",
-                    description: "Pour rêver de mondes fantastiques grâce à la plume magique de Tolkien.",
-                    price: 29,
-                    preference: 4,
-                    link: 'https://www.cultura.com/p-lettres-du-pere-noel-9782267046809.html',
-                    image: 'https://cdn.cultura.com/cdn-cgi/image/width=1280/media/pim/TITELIVE/15_9782267046809_1_75.jpg'
-                },
-                {
                     title: "Monopoly Animal Crossing",
                     description: "Pour redécouvrir ce jeu mythique dans l'univers d'Animal Crossing.",
                     price: 27,
