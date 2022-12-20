@@ -8,6 +8,12 @@ export const useContent = defineStore('Content', {
             emoji: '🍞',
             cards: [
                 {
+                    title: "Blog",
+                    description: "Mon journal où je blablate sur mes découvertes et mes créations du moment.",
+                    link: 'blog',
+                    emoji: '✒️'
+                },
+                {
                     title: "Liste de Noël 2022",
                     description: "Ma liste de souhaits pour Noël. Essentiellement pour les cadeaux de moi à moi 😊",
                     link: 'liste-de-noel',
@@ -18,7 +24,7 @@ export const useContent = defineStore('Content', {
                     description: "Je me suis récemment lancé dans la création de pendentifs avec des cristaux. Voici mes dernières créations.",
                     link: 'pendentifs',
                     emoji: '💎'
-                }*/
+                },*/
             ]
         }
     }),
