@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import router from '@/router'
-
 const props = defineProps({
   title: String,
   description: String,
@@ -13,7 +11,7 @@ const props = defineProps({
   <section class="card">
     <h2 class="accent">{{ props.title }} <span>{{ props. emoji }}</span></h2>
     <p>{{ props.description }}</p>
-    <router-link :to="props.link">
+    <router-link :to="`${props.link}`">
       <button class="accent-btn">
         Découvrir
       </button>
