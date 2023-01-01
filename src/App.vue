@@ -14,6 +14,9 @@ import { RouterLink, RouterView } from 'vue-router'
   <main>
     <RouterView />
   </main>
+  <footer>
+    <RouterLink to="/mentions-legales">Mentions légales & confidentialité</RouterLink>
+  </footer>
 </template>
 
 <style scoped lang="sass">
@@ -31,4 +34,12 @@ nav a
 
 nav a:hover
   color: #d285de
+
+footer a
+  font-size: 0.9em
+  color: #d285de
+
+footer
+  text-align: center
+  padding-top: 50px
 </style>

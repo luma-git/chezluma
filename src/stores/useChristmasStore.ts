@@ -4,7 +4,7 @@ export const useChristmas = defineStore('Christmas', {
     state: () => ({
         christmas: {
             title: "Liste de Noël 2022",
-            subtitle: "Ma liste de souhaits pour ce Noël. Vous pouvez filtrer mes souhaits par prix ou par préférénce. Plus il y a de coeurs, plus j'aime !",
+            subtitle: "Ma liste de souhaits pour ce Noël. Vous pouvez filtrer mes souhaits par prix ou par préférence. Plus il y a de coeurs, plus j'aime !",
             emoji: '🎄',
             preferenceImage: 'heart.png',
             list: [
@@ -49,28 +49,12 @@ export const useChristmas = defineStore('Christmas', {
                     image: 'https://cdn.cultura.com/cdn-cgi/image/width=1280/media/pim/TITELIVE/84_9782011356437_1_75.jpg'
                 },
                 {
-                    title: "Lightfall tome 1",
-                    description: "Un roman graphique qui me fait de l'oeil depuis longtemps.",
-                    price: 19,
-                    preference: 3,
-                    link: 'https://www.cultura.com/p-lightfall-la-derniere-flamme-9782075152594.html',
-                    image: 'https://cdn.cultura.com/cdn-cgi/image/width=1280/media/pim/TITELIVE/23_9782075152594_1_75.jpg'
-                },
-                {
                     title: "Everdell",
                     description: "Un jeu facile d'accès dans un univers enchanteur, pouvant se jouer à 2 ou même seul.",
                     price: 53,
                     preference: 2,
                     link: 'https://www.philibertnet.com/fr/starling-games/84458-everdell-610585962435.html',
                     image: 'https://cdn2.philibertnet.com/538270-large_default/everdell.jpg'
-                },
-                {
-                    title: "Mug Ratus",
-                    description: "Trop choupi ce mug merch de la streameuse Ultia.",
-                    price: 15,
-                    preference: 3,
-                    link: 'https://boutiqueultia.com/products/tasse-rat',
-                    image: 'https://cdn.shopify.com/s/files/1/0587/0872/1796/products/TasseRat.jpg?v=1665145975&width=1946'
                 },
                 {
                     title: "Intégrale Kaamelott en DVD",
