@@ -10,17 +10,29 @@ const router = createRouter({
       component: () => import('@/views/HomeView.vue')
     },
     {
+      path: '/mentions-legales',
+      name: 'legal',
+      component: () => import('@/views/LegalView.vue')
+    },
+    {
       path: '/blog',
-      component: () => import('@/views/BlogView.vue'),
+      component: () => import('@/views/LinkView.vue'),
       beforeEnter() {
         window.location.href = 'https://blog.chezluma.fr/'
       }
     },
     {
+      path: '/mastodon',
+      component: () => import('@/views/LinkView.vue'),
+      beforeEnter() {
+        window.location.href = 'https://piaille.fr/@lumadon'
+      }
+    },
+    /*{
       path: '/liste-de-noel',
       name: 'christmasList',
       component: () => import('@/views/ChristmasListView.vue')
-    }
+    }*/
   ]
 })
 

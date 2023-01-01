@@ -4,7 +4,7 @@ export const useContent = defineStore('Content', {
     state: () => ({
         home: {
             title: "Chez Luma",
-            subtitle: "Une tartine perdue dans le cyberespace... Mes projets perso de code, mes créations en tous genres et bientôt un blog.",
+            subtitle: "Une tartine perdue dans le cyberespace... Mes projets perso de code, mes créations en tous genres et mon blog.",
             emoji: '🍞',
             cards: [
                 {
@@ -14,16 +14,16 @@ export const useContent = defineStore('Content', {
                     emoji: '✒️'
                 },
                 {
+                    title: "Mastodon",
+                    description: "Mon compte sur le réseau social Mastodon.",
+                    link: 'mastodon',
+                    emoji: '🐘'
+                },
+                /*{
                     title: "Liste de Noël 2022",
                     description: "Ma liste de souhaits pour Noël. Essentiellement pour les cadeaux de moi à moi 😊",
                     link: 'liste-de-noel',
                     emoji: '🎄'
-                },
-                /*{
-                    title: "Création de pendentifs",
-                    description: "Je me suis récemment lancé dans la création de pendentifs avec des cristaux. Voici mes dernières créations.",
-                    link: 'pendentifs',
-                    emoji: '💎'
                 },*/
             ]
         }
